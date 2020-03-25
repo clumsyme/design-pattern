@@ -139,7 +139,7 @@ class MazeGame:
 +       room1 = self.makeRoom(1)
         ...
 
-+ class MagicMazeGame:
++ class MagicMazeGame(MazeGame):
 +     def makeRoom(roomNo: int):
 +         return EnchantedRoom(roomNo)
 
@@ -163,7 +163,7 @@ class MazeGame:
 +     def makeRoom(self, roomNo: int) -> Room:
 +         return Room(roomNo)
 + 
-+ class MagicMazeFactory:
++ class MagicMazeFactory(MazeFactory):
 +     ...
 +     def makeRoom(self, roomNo: int) -> Room:
 +         return EnchantedRoom(roomNo)
